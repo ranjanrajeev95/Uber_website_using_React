@@ -4,11 +4,6 @@ This is a website mainly designed using React Js and CSS including media query s
 ## How does it work
 You can see my video which give a brief operation video or play with it on my hosted website online (http://react-uber-official.s3-website-ap-southeast-2.amazonaws.com). If you want to find more, you can see my source code and run "npm start" in VS code terminal. 
 
-## Source Code
-You can see more details when you run my code. My Source code is on my Github - https://github.com/StevenWang9102, simply run "npm start" in your VS code terminal.
-
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
