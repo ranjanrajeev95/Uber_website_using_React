@@ -1,5 +1,5 @@
 ## Introduction
-This is a website that I mainly practice react and css(including media query sass and so on). It displays the main page of Uber official website. The whole website is fully responsive that bases on different screen sizes.
+This is a website mainly designed using React Js and CSS including media query sass and so on. It displays the main page of Uber official website. The whole website is fully responsive that bases on different screen sizes.
 
 ## How does it work
 You can see my video which give a brief operation video or play with it on my hosted website online (http://react-uber-official.s3-website-ap-southeast-2.amazonaws.com). If you want to find more, you can see my source code and run "npm start" in VS code terminal. 
