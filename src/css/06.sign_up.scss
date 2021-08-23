@@ -1,0 +1,114 @@
+#sign-up {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 10px;
+  max-width: 1120px;
+  border-top: 3px solid rgba(128, 128, 128, 0.1);
+}
+
+#sign-up-block h1 {
+  position: relative;
+  top: 40px;
+  font-size: 32px;
+  width: 380px;
+  margin: 20px;
+  min-width: 300px;
+  cursor: pointer;
+
+  &::after {
+    @extend .article_underline;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 100%;
+  }
+
+  &:hover {
+    color: grey;
+  }
+}
+
+#sign-up-block .container {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  width: 100px;
+  height: 50px;
+
+  & .block_box1,
+  .block_box2 {
+    height: 42px;
+    width: 31px;
+    background-color: white;
+    z-index: 60;
+  }
+
+  & .block_box1 {
+    position: absolute;
+    left: 0px;
+  }
+
+  & .block_box2 {
+    position: absolute;
+    left: 62px;
+  }
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 42px;
+    height: 40px;
+  }
+
+  &:hover {
+    & img {
+      animation: arrow-move 0.5s linear 2 forwards;
+    }
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(32px, 0);
+  }
+}
+
+@media (min-width: $small-screen) {
+  #sign-up {
+    max-width: 1200px;
+  }
+
+  #sign-up-block h1 {
+    width: 95%;
+  }
+
+  #sign-up-block .container {
+    right: -2.5%;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #sign-up {
+    height: 320px;
+    margin-left: 30px auto;
+  }
+
+  #sign-up-block {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #sign-up-block h1 {
+    width: 90%;
+  }
+
+  #sign-up-block .container {
+    right: 3%;
+  }
+}

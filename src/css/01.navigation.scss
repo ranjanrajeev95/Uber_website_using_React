@@ -1,0 +1,60 @@
+#navigation {
+  position: relative;
+  top: 0;
+  height: 60px;
+  padding: 10px 10px 10px 20px;
+  text-align: center;
+  background-color: black;
+  z-index: 10;
+}
+
+#navigation .navbar-brand {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#navigation .navbar-toggler {
+    float: right;
+    padding: 0;
+
+    & img{
+      width: 30px;
+      object-fit: cover;
+    }
+}
+
+#navigation .nav-link {
+  color: white;
+  font-weight: 600;
+  width: 100px;
+  vertical-align: middle;
+  padding: 10px 12px 10px 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#navigation .login-area {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  height: 30px;
+  width: 220px;
+  overflow: hidden;
+
+  & li{
+    display: inline;
+  }
+}
+
+#navigation .login-area li:nth-child(2) {
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: $small-screen) {
+  #navigation .login-area {
+    right: 50px;
+  }
+}

@@ -1,0 +1,69 @@
+#motion {
+  position: relative;
+  height: 600px;
+  border-top: 3px solid $light-grey;
+  background-color: $background-cream-white;
+}
+
+#motion h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#motion .container {
+  margin: 0;
+}
+
+#motion img {
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  width: 100%;
+  margin-bottom: 0;
+  object-fit: cover;
+}
+
+#motion .view-all-city {
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+  @include public_underline(92px, 5px);
+}
+
+@media only screen and (min-width: $medium-screen) {
+  #motion img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  #motion {
+    position: relative;
+    height: 520px;
+  }
+  #motion h1 {
+    font-size: 45px;
+  }
+  #motion img {
+    height: 85%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #motion {
+    position: relative;
+    height: 420px;
+  }
+
+  #motion h1 {
+    font-size: 40px;
+  }
+
+  #motion img {
+    height: 65%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+#help {
+  position: relative;
+  height: 600px;
+  padding: 30px 10px 30px 10px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+#help section{
+  padding-top: 20px;
+
+  & ul{
+    padding: 5px;
+  }
+
+  & li{
+    cursor: pointer;
+    line-height: 28px;
+  }
+}
+
+#help .first-column img{
+  height: 26px;
+  width: auto;
+  margin: 0 7px 0 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#help .payment-img{
+  margin: 20px 30px 20px 0px;
+}
+
+@media only screen and (min-width: $medium-screen) {
+  #help{
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  #help{
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #help{
+    height: 920px;
+  }
+}

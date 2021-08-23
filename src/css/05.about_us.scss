@@ -1,0 +1,52 @@
+
+#about-us {
+  position: relative;
+  height: 350px;
+  padding: 50px 35px 20px 35px;
+  max-width: $large-screen;
+  border-top: 3px solid $light-grey;
+  background-color: #ffffff;
+}
+
+#about-us-block {
+  padding-top: 40px;
+}
+
+#about-us-block img {
+  padding-bottom: 20px;
+}
+
+#about-us-block .learn-more {
+  cursor: pointer;
+  @include public_underline(78px, 5px);
+}
+
+@media only screen and (min-width: $medium-screen) {
+  #about-us-block h4 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  #about-us {
+    height: 560px;
+  }
+
+  #about-us-block h4 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #about-us {
+    height: 660px;
+    max-width: 680px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  #about-us {
+    height: 750px;
+    max-width: 820px;
+  }
+}
